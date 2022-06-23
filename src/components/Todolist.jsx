@@ -4,7 +4,7 @@ import Todo from './Todo';
 
 const Todolist = ({ todos, setTodos, filteredTodos }) => {
   return (
-    <div className="todo-containter">
+    <div className="todo-container">
       <ul className="todo-list">
         {filteredTodos.map((todo) => (
           <Todo 

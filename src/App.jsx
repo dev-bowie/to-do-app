@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("todos"));
-    console.log(todos);
+    setTodos(todos);
   }, []);
 
   useEffect(() => {
