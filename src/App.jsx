@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Form from "./components/Form/Form";
 import Todolist from "./components/Todolist/Todolist";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -54,6 +55,7 @@ function App() {
         setTodos={setTodos}
         todos={todos}
       />
+      <Footer />
     </div>
   );
 }

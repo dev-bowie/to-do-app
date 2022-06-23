@@ -1,0 +1,42 @@
+footer {
+    background-color: var(--color-secondary);
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 5rem;
+}
+
+footer a {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: inline block;
+    text-decoration: none;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-container a {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    display: flex;
+    padding: 0.3rem;
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+}
+
+.footer-container a:hover {
+    background-color: transparent;
+    color: var(--color-dark);
+    border-color: var(--color-dark);
+}
+
+.footer-copyright {
+    color: var(--color-dark);
+    user-select: none;
+}
