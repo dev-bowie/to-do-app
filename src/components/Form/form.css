@@ -1,0 +1,70 @@
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    border: none;
+    background-color: var(--color-light);
+}
+
+form button {
+    color: var(--color-dark);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+form button:hover {
+    color: var(--primary-color);
+    background-color: var(--color-dark);
+}
+
+/* Custom selector */
+select {
+    appearance: none;
+    box-shadow: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+select {
+    cursor: pointer;
+    background-color: var(--color-light);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+    width: 12rem;
+    padding: 0.5rem;
+}
+
+option {
+    font-size: 0.75rem;
+}
+
+/* Arrow */
+.select::after {
+    content: '▼';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.65rem;
+    color: var(--color-dark);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    color: var(--primary-color);
+    background-color: var(--color-dark);
+}
