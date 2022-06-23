@@ -1,7 +1,6 @@
-import "./App.css";
 import React, { useState, useEffect } from "react";
-import Form from "./components/Form";
-import Todolist from "./components/Todolist";
+import Form from "./components/Form/Form";
+import Todolist from "./components/Todolist/Todolist";
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -36,7 +35,6 @@ function App() {
   const saveToStorage = () => {
     localStorage.setItem("todos", JSON.stringify(todos));
   };
-
 
   return (
     <div className="App">
