@@ -7,12 +7,13 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
-
+  
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("todos"));
     setTodos(todos);
   }, []);
 
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     filterHandler();
     saveToStorage();
