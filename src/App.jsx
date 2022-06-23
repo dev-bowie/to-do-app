@@ -1,19 +1,19 @@
-import "./App.css";
 import React, { useState, useEffect } from "react";
-import Form from "./components/Form";
-import Todolist from "./components/Todolist";
+import Form from "./components/Form/Form";
+import Todolist from "./components/Todolist/Todolist";
 
 function App() {
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
-
+  
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("todos"));
-    console.log(todos);
+    setTodos(todos);
   }, []);
 
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     filterHandler();
     saveToStorage();
@@ -36,7 +36,6 @@ function App() {
   const saveToStorage = () => {
     localStorage.setItem("todos", JSON.stringify(todos));
   };
-
 
   return (
     <div className="App">
