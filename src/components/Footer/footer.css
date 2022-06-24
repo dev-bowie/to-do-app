@@ -28,6 +28,7 @@ footer a {
     padding: 0.3rem;
     border-radius: 0.75rem;
     border: 1px solid transparent;
+    transition: var(--transition);
 }
 
 .footer-container a:hover {

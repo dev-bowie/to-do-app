@@ -11,13 +11,18 @@ form button {
     font-size: 1.25rem;
     border: none;
     background-color: var(--color-light);
+    transition: var(--transition);
 }
+
+form input:focus {
+    background-color: white;
+}
+
 
 form button {
     color: var(--color-dark);
     background-color: var(--secondary-color);
     cursor: pointer;
-    transition: var(--transition);
 }
 
 form button:hover {
@@ -47,6 +52,10 @@ select {
     padding: 0.5rem;
 }
 
+select:focus {
+    background-color: white;
+}
+
 option {
     font-size: 0.75rem;
 }
@@ -62,6 +71,7 @@ option {
     background-color: var(--secondary-color);
     cursor: pointer;
     pointer-events: none;
+    transition: var(--transition);
 }
 
 .select:hover::after {
